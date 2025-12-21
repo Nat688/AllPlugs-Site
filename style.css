@@ -25,10 +25,6 @@ html, body {
 .btn:active {
   transform: scale(0.96);
 }
-.btn:focus {
-  outline: 3px solid #2C2E39;
-  outline-offset: 3px;
-}
 header {
   position: fixed;
   top: 0;
