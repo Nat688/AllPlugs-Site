@@ -20,7 +20,7 @@
   <!-- Timer 1h30 -->
   <div id="timer">01:30:00</div>
   <h5>
-    <a href="https://serveur-prive.net/minecraft/allplug/vote" target="_blank">
+    <a href="https://serveur-prive.net/minecraft/allplug/vote" target="_blank" id="vote1">
       <img src="images/vote/servpriv.png">
     </a>
   </h5>
@@ -28,7 +28,7 @@
   <!-- Timer 2h -->
   <div id="temps">02:00:00</div>
   <h5>
-    <a href="https://top-serveurs.net/minecraft/vote/allplugs-6948489f3565f" target="_blank">
+    <a href="https://top-serveurs.net/minecraft/vote/allplugs-6948489f3565f" target="_blank" id="vote2">
       <img src="images/vote/topserv.png">
     </a>
   </h5>
@@ -37,7 +37,6 @@
     function lancerTimer(id, dureeSecondes, storageKey) {
       const el = document.getElementById(id);
 
-      // Fonction pour formater le temps en HH:MM:SS
       function formatTemps(sec) {
         let h = Math.floor(sec / 3600);
         let m = Math.floor((sec % 3600) / 60);
@@ -49,16 +48,15 @@
         );
       }
 
-      // Vérifier si une date de fin existe dans le localStorage
+      // Vérifier si la date de fin existe déjà
       let fin = localStorage.getItem(storageKey);
       if (!fin) {
-        fin = Date.now() + dureeSecondes * 1000; // date de fin = maintenant + durée
+        fin = Date.now() + dureeSecondes * 1000;
         localStorage.setItem(storageKey, fin);
       } else {
         fin = parseInt(fin, 10);
       }
 
-      // Fonction qui met à jour le timer chaque seconde
       function tick() {
         let restant = Math.floor((fin - Date.now()) / 1000);
 
@@ -75,9 +73,14 @@
       setInterval(tick, 1000);
     }
 
-    // Lancer les deux timers persistants
-    lancerTimer("timer", 1 * 60 * 60 + 30 * 60, "timer_1h30"); // 1h30
-    lancerTimer("temps", 2 * 60 * 60, "timer_2h");              // 2h
+    // Lancer le timer seulement au clic sur le bouton de vote
+    document.getElementById("vote1").addEventListener("click", () => {
+      lancerTimer("timer", 1 * 60 * 60 + 30 * 60, "timer_1h30");
+    });
+
+    document.getElementById("vote2").addEventListener("click", () => {
+      lancerTimer("temps", 2 * 60 * 60, "timer_2h");
+    });
   </script>
 </body>
 
