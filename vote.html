@@ -39,7 +39,7 @@
 		}, 1000);
 	</script>
 	<h5><a href="https://serveur-prive.net/minecraft/allplug/vote" target="_blank"><img src="images/vote/servpriv.png"></a></h5> <!-- Lien N°1 1h30 entre les votes -->
-	<div id="timer">02:00:00</div>
+	<div id="temps">02:00:00</div>
 	<script>
       let temps = 2 * 60 * 60; // 2h00 en secondes
 		function formatTemps(sec) {
@@ -53,11 +53,11 @@
 			);
 		}
 		const interval = setInterval(() => {
-			document.getElementById("timer").textContent = formatTemps(temps);
+			document.getElementById("temps").textContent = formatTemps(temps);
 			temps--;
 			if (temps < 0) {
 				clearInterval(interval);
-				document.getElementById("timer").textContent = "Terminé !";
+				document.getElementById("temps").textContent = "Terminé !";
 			}
 		}, 1000);
 	</script>
