@@ -2,7 +2,7 @@
 html, body {
 	margin: 0;
 	padding: 0;
-    }
+}
 .btn { 
   background-color: #FF921C; 
   color: #2C2E39;
@@ -19,11 +19,9 @@ html, body {
   cursor: pointer;
   transition: background-color 0.2s, transform 0.1s;
 }
-
 .btn:hover {
   background-color: #ffad4d;
 }
-
 .btn:active {
   transform: scale(0.96);
 }
