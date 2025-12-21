@@ -16,6 +16,28 @@
 <body>
 	<h1>Bienvenue chez <span class="title_site">AllPlugs</span></h1>
 	<h2>Votez pour le Serveur Minecraft</h2>
+	<div id="timer">01:30:00</div>
+	<script>
+      let temps = 1 * 60 * 60 + 30 * 60; // 1h30 en secondes
+		function formatTemps(sec) {
+			let h = Math.floor(sec / 3600);
+			let m = Math.floor((sec % 3600) / 60);
+			let s = sec % 60;
+			return (
+				String(h).padStart(2, "0") + ":" +
+				String(m).padStart(2, "0") + ":" +
+				String(s).padStart(2, "0")
+			);
+		}
+		const interval = setInterval(() => {
+			document.getElementById("timer").textContent = formatTemps(temps);
+			temps--;
+			if (temps < 0) {
+				clearInterval(interval);
+				document.getElementById("timer").textContent = "Terminé !";
+			}
+		}, 1000);
+	</script>
 	<h5><a href="https://serveur-prive.net/minecraft/allplug/vote" target="_blank"><img src="images/vote/servpriv.png"></a></h5> <!-- Lien N°1 1h30 entre les votes -->
 	<h5><a href="https://top-serveurs.net/minecraft/vote/allplugs-6948489f3565f" target="_blank"><img src="images/vote/topserv.png"></a></h5> <!-- Lien N°2 2h entre les votes -->
 </body>
