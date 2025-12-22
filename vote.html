@@ -88,6 +88,14 @@
       lancerTimer("temps", 2 * 60 * 60, "timer_2h");
     });
   </script>
+	<scriot>
+		if (localStorage.getItem("timer_1h30")) {
+		lancerTimer("timer", 1 * 60 * 60 + 30 * 60, "timer_1h30");
+		}
+		if (localStorage.getItem("timer_2h")) {
+		lancerTimer("temps", 2 * 60 * 60, "timer_2h");
+		}
+    </scriot>
 </body>
 
 <!-- OBLIGATOIRE SUR TOUT LE SITE -->
