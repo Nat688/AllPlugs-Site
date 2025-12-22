@@ -68,7 +68,7 @@
         if (restant <= 0) {
 			localStorage.setItem(storageKey + "_done", "1");
 			clearInterval(interval);              // ← AJOUT IMPORTANT
-			el.textContent = "Terminé !";
+			el.textContent = "Vous pouvez voté !";
 			localStorage.removeItem(storageKey);
 			return;
 		}
