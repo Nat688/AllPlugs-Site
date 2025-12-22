@@ -81,7 +81,8 @@
 
     // Lancer le timer seulement au clic sur le bouton de vote
     document.getElementById("vote1").addEventListener("click", () => {
-      lancerTimer("timer", 1 * 60 * 60 + 30 * 60, "timer_1h30");
+		localStorage.removeItem("timer_1h30_done"); // 🔴 RESET état terminé
+		lancerTimer("timer", 1 * 60 * 60 + 30 * 60, "timer_1h30");
     });
 
     document.getElementById("vote2").addEventListener("click", () => {
