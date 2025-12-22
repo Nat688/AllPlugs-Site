@@ -32,7 +32,7 @@
       <img src="images/vote/topserv.png">
     </a>
   </h5>
-
+  <!-- --------------------  TIMERS  -------------------- -->
   <script>
     function lancerTimer(id, dureeSecondes, storageKey) {
       const el = document.getElementById(id);
@@ -41,7 +41,6 @@
 			  el.textContent = "Vous pouvez voté !";
 			  return;
 		  }
-
       function formatTemps(sec) {
         let h = Math.floor(sec / 3600);
         let m = Math.floor((sec % 3600) / 60);
@@ -52,8 +51,7 @@
           String(s).padStart(2, "0")
         );
       }
-
-      // Vérifier si la date de fin existe déjà
+      // Vérifier si la date de fin existe déjà //
       let fin = localStorage.getItem(storageKey);
       if (!fin) {
         fin = Date.now() + dureeSecondes * 1000;
@@ -67,7 +65,7 @@
 
         if (restant <= 0) {
 			localStorage.setItem(storageKey + "_done", "1");
-			clearInterval(interval);              // ← AJOUT IMPORTANT
+			clearInterval(interval);
 			el.textContent = "Vous pouvez voté !";
 			localStorage.removeItem(storageKey);
 			return;
@@ -76,19 +74,20 @@
         el.textContent = formatTemps(restant);
       }
       const interval = setInterval(tick, 1000);
-      tick(); // affichage immédiat
+      tick(); // affichage immédiat //
     }
 
     // Lancer le timer seulement au clic sur le bouton de vote
     document.getElementById("vote1").addEventListener("click", () => {
-		localStorage.removeItem("timer_1h30_done"); // 🔴 RESET état terminé
+		localStorage.removeItem("timer_1h30_done"); // 🔴 RESET si terminé //
 		lancerTimer("timer", 1 * 60 * 60 + 30 * 60, "timer_1h30");
     });
 
     document.getElementById("vote2").addEventListener("click", () => {
-		localStorage.removeItem("timer_2h_done"); // 🔴 RESET état terminé
+		localStorage.removeItem("timer_2h_done"); // 🔴 RESET si terminé //
 		lancerTimer("temps", 2 * 60 * 60, "timer_2h");
 	});
+	  // Stockage des timers //
 	  	if (localStorage.getItem("timer_1h30")) {
 			lancerTimer("timer", 1 * 60 * 60 + 30 * 60, "timer_1h30");
 		}
