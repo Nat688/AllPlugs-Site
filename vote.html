@@ -75,9 +75,8 @@
 
         el.textContent = formatTemps(restant);
       }
-
-      tick(); // affichage immédiat
       const interval = setInterval(tick, 1000);
+      tick(); // affichage immédiat
     }
 
     // Lancer le timer seulement au clic sur le bouton de vote
