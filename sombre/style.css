@@ -59,22 +59,26 @@ a:active, a:focus {
 }
 body {
   padding-top: 40px;
-  background-color: #F2F0EA;
+  background-color: #252121;
   font-size: 150%;
-  color: black;
+  color: white;
   text-align: left;
 }
 h1 {
-  font-size: 200%;
-  color: black;
-  text-align: center;
+	background-color: #252121;
+    font-size: 200%;
+    color: white;
+    text-align: center;
 }
 h2 {
-  font-size: 150%;
-  color: black;
-  text-align: center;
+	background-color: #252121;
+    font-size: 150%;
+    color: white;
+    text-align: center;
 }
 h3 {
-  font-size: 125%;
+	background-color: #252121;
+    font-size: 125%;
+    color: white;
 }
 /* IN ALL PAGES */
