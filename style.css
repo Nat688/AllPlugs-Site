@@ -23,7 +23,6 @@ html, body {
   background-color: #ffad4d;
 }
 .zone-boutons {
-  display: flex;
   align-items: center;
 }
 
