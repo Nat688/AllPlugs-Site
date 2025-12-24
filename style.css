@@ -22,6 +22,24 @@ html, body {
 .btn:hover {
   background-color: #ffad4d;
 }
+}
+.btn2 { 
+  background-color: #FF921C; 
+  color: #2C2E39;
+
+  border: 3px solid #2C2E39;
+  border-radius: 5px;
+
+  padding: 8px 25px;
+  font-family: monospace;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+.btn2:hover {
+  background-color: #ffad4d;
+}
 .right-btn {
   margin-right: auto;
 }
