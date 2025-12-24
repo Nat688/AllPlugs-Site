@@ -22,31 +22,19 @@ html, body {
 .btn:hover {
   background-color: #ffad4d;
 }
-.btn_1 {
-  text-align: center;
+.zone-boutons {
+  display: flex;
+  align-items: center;
 }
-.btn_2 {
-  text-align: right;
-}
-.btn2 { 
-  background-color: #FF921C; 
-  color: #2C2E39;
 
-  border: 3px solid #2C2E39;
-  border-radius: 5px;
-
-  padding: 8px 25px;
-  font-family: monospace;
-  font-weight: bold;
-  margin-right: 50px;
-  margin-left: 50px;
-
-  cursor: pointer;
-  transition: background-color 0.2s, transform 0.1s;
+.centre {
+  margin: auto;
 }
-.btn2:hover {
-  background-color: #ffad4d;
+
+.zone-boutons > button {
+  margin-left: auto;
 }
+
 header {
   position: fixed;
   top: 0;
