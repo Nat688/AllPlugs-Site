@@ -8,7 +8,7 @@ html, body {
     color: #2C2E39;
 	border: 3px solid #2C2E39;
 	border-radius: 5px;
-	padding: 8px 25px;
+	padding: 5px 10px;
 	font-family: monospace;
 	font-weight: bold;
 	cursor: pointer;
@@ -22,7 +22,7 @@ html, body {
     color: #2C2E39;
 	border: 3px solid #2C2E39;
     border-radius: 5px;
-	padding: 8px 25px;
+	padding: 6px 15px;
     font-family: monospace;
     font-weight: bold;
 	cursor: pointer;
