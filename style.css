@@ -15,13 +15,18 @@ html, body {
   font-weight: bold;
   margin-right: 50px;
   margin-left: 50px;
-  text-align: center;
 
   cursor: pointer;
   transition: background-color 0.2s, transform 0.1s;
 }
 .btn:hover {
   background-color: #ffad4d;
+}
+.btn_1 {
+  text-align: center;
+}
+.btn_2 {
+  text-align: right;
 }
 .btn2 { 
   background-color: #FF921C; 
@@ -35,7 +40,6 @@ html, body {
   font-weight: bold;
   margin-right: 50px;
   margin-left: 50px;
-  text-align: right;
 
   cursor: pointer;
   transition: background-color 0.2s, transform 0.1s;
