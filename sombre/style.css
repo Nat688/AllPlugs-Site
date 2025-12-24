@@ -5,9 +5,9 @@ html, body {
 }
 .btn { 
   background-color: #FF921C; 
-  color: #2C2E39;
+  color: #F2F0EA;
 
-  border: 3px solid #2C2E39;
+  border: 3px solid #F2F0EA;
   border-radius: 5px;
 
   padding: 8px 25px;
@@ -46,16 +46,16 @@ footer {
   text-align: center;
 }
 a:link {
-  color: #2C2E39;
+  color: #F2F0EA;
 }
 a:visited {
-  color: #2C2E39;
+  color: #F2F0EA;
 }
 a:hover {
-  color: #2C2E39;
+  color: #F2F0EA;
 }
 a:active, a:focus {
-  color: #2C2E39;
+  color: #F2F0EA;
 }
 body {
   padding-top: 40px;
