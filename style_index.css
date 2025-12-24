@@ -34,9 +34,4 @@ details > summary {
   height: 2px;
   background-color: black;
 }
-a {
-  pointer-events: auto !important;
-  position: relative;
-  z-index: 9999;
-}
 /* PAGE HOME */
