@@ -23,10 +23,7 @@ html, body {
   background-color: #ffad4d;
 }
 .right-btn {
-  align-items: right;
-}
-.center-btn {
-  align-items: center;
+  margin-left: auto;
 }
 header {
   position: fixed;
@@ -39,6 +36,7 @@ header {
 
   font-size: 125%;
   color: #2C2E39;
+  text-align: center;
 }
 footer {
   bottom: 0;
