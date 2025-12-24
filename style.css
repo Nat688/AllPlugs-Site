@@ -32,7 +32,7 @@ html, body {
 }
 .btn2:hover {
     background-color: #ffad4d;
-	text-align: right;
+	margin-left: auto;
 }
 header {
     position: fixed;
