@@ -23,7 +23,7 @@ html, body {
   background-color: #ffad4d;
 }
 .right-btn {
-  margin-left: auto;
+  margin-right: auto;
 }
 header {
   position: fixed;
