@@ -13,7 +13,6 @@ html, body {
 	font-weight: bold;
 	cursor: pointer;
 	margin-left: 10px;
-	transition: background-color 0.2s, transform 0.1s;
 }
 .btn:hover {
     background-color: #ffad4d;
@@ -28,7 +27,6 @@ html, body {
     font-weight: bold;
 	cursor: pointer;
 	margin-left: auto;
-    transition: background-color 0.2s, transform 0.1s;
 }
 .btn2:hover {
     background-color: #ffad4d;
