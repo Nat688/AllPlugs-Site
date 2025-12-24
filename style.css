@@ -12,13 +12,11 @@ html, body {
 	font-family: monospace;
 	font-weight: bold;
 	margin-left: 50px;
-	text-align: right;
 	cursor: pointer;
 	transition: background-color 0.2s, transform 0.1s;
 }
 .btn:hover {
     background-color: #ffad4d;
-    text-align: right;
 }
 .btn2 { 
     background-color: #FF921C; 
@@ -30,11 +28,11 @@ html, body {
     font-weight: bold;
 	cursor: pointer;
     transition: background-color 0.2s, transform 0.1s;
-	text-align: right;
+	text-align: left;
 }
 .btn2:hover {
     background-color: #ffad4d;
-	text-align: right;
+	text-align: left;
 }
 header {
     position: fixed;
