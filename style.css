@@ -41,7 +41,7 @@ html, body {
   background-color: #ffad4d;
 }
 .right-btn {
-  margin-right: auto;
+  text-align: right;
 }
 header {
   position: fixed;
