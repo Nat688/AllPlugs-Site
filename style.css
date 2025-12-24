@@ -22,18 +22,12 @@ html, body {
 .btn:hover {
   background-color: #ffad4d;
 }
-.zone-boutons {
+.right-btn {
+  align-items: right;
+}
+.center-btn {
   align-items: center;
 }
-
-.centre {
-  margin: auto;
-}
-
-.zone-boutons > button {
-  margin-right: auto;
-}
-
 header {
   position: fixed;
   top: 0;
