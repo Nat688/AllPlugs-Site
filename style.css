@@ -32,14 +32,12 @@ html, body {
   padding: 8px 25px;
   font-family: monospace;
   font-weight: bold;
-  text-align: right;
 
   cursor: pointer;
   transition: background-color 0.2s, transform 0.1s;
 }
 .btn2:hover {
     background-color: #ffad4d;
-	text-align: right;
 }
 header {
   position: fixed;
