@@ -22,7 +22,7 @@ html, body {
     color: #F2F0EA;
 	border: 3px solid #F2F0EA;
     border-radius: 5px;
-	padding: 8px 16px;
+	padding: 8px 6px;
     font-family: monospace;
     font-weight: bold;
 	cursor: pointer;
@@ -31,6 +31,9 @@ html, body {
 }
 .btn2:hover {
     background-color: #ffad4d;
+}
+.nou {
+	text-decoration: none;
 }
 header {
     position: fixed;
