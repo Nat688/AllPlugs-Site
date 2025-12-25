@@ -2,77 +2,76 @@
 <!DOCTYPE html> 
 <link rel="stylesheet" type="text/css" href="style.css">
 <html lang="fr">
-<html>
-<head>
-	<link rel="icon" type="image/png" href="images\favicon.png">
-    <title>AllPlugs Wiki - Commandes</title> <!-- CHANGE SELON LA PAGE -->
-</head>
-<header>
-    <button class="btn">
-		<a href="index.html">Home</a>
-	</button> 
-	<button class="btn">
-		<a href="patch.html">Patch</a>
-	</button> 
-	<button class="btn">
-		<a href="wiki.html">Wiki</a> 
-	</button>
-	<button class="btn">
-		<a href="vote.html">Votes</a>
-	</button>
-	<button class="btn2">
-		<a href="./sombre/commandes.html">Mode Sombre</a> <!-- CHANGE SELON LA PAGE -->
-	</button>
-</header>
+	<html>
+		<head>
+			<link rel="icon" type="image/png" href="images\favicon.png">
+    		<title>AllPlugs Wiki - Commandes</title> <!-- CHANGE SELON LA PAGE -->
+		</head>
+		<header>
+    		<button class="btn">
+				<a href="index.html">Home</a>
+			</button> 
+			<button class="btn">
+				<a href="patch.html">Patch</a>
+			</button> 
+			<button class="btn">
+				<a href="wiki.html">Wiki</a> 
+			</button>
+			<button class="btn">
+				<a href="vote.html">Votes</a>
+			</button>
+			<button class="btn2">
+				<a href="./sombre/commandes.html">Mode Sombre</a> <!-- CHANGE SELON LA PAGE -->
+			</button>
+		</header>
 <!-- OBLIGATOIRE SUR TOUT LE SITE -->
+		<link rel="stylesheet" type="text/css" href="style_wiki.css"> <!-- Style UNIQUEMENT pour les pages WIKI -->
+		<link rel="stylesheet" type="text/css" href="style_cmd.css"> <!-- Style UNIQUEMENT pour la page COMMANDES -->
+		<body>
+			<h1></h1>
+			<h1>Bienvenue sur le <span class="title_site">Wiki de AllPlugs</span></h1>
+			<h2>Commandes</h2>
+			<h3>Liste complète:</h3> <!-- Liste des commandes --> <!-- Utilisable sans /rang | premium -->
+			<ul>
+				<li><span class="command">/reglement</span> <span class="base">affiche le lien pour accedé au règlement.</span></li>
+				<li><span class="command">/wiki</span> <span class="base">ouvre l'interfaces du wiki.</span></li>
+				<li><span class="command">/discord</span> <span class="base">donne le lien du serveur discord.</span></li>
+				<li><span class="command">/help</span> <span class="base">ouvre l'interfaces du wiki.</span></li>
+				<li><span class="command">/shop</span> <span class="base">ouvre le shop, là où vous pouvez trouvé des spawners.</span></li>
+				<ul>
+					<li><span class="command">/sell hand</span> <span class="base">vend l'object dans votre main.</span></li>
+					<li><span class="command">/sellall [item]</span> <span class="base">vend tous les objects séléctionné dans votre inventaire.</span></li>
+					<li><span class="command">/sellall inventory</span> <span class="base">vend tous les object dans votre inventaire.</span></li>
+				</ul>
+				<li><span class="command">/claim</span> <span class="base">claim la zone autour de vous avec des claimblock.</span></li>
+				<ul>
+					<li><span class="command">/buyclaim</span> <span class="base">200$/claimbloc.</span></li>
+      	    		<li><span class="command">/sellclaim</span> <span class="base">20$/claimbloc.</span></li>
+					<li><span class="command">/deleteallclaims</span> <span class="base">supprime tous vos claims.</span></li>
+					<li><span class="command">/deleteclaim</span> <span class="base">supprime le claim où vous vous situez.</span></li>
+            		<li><span class="command">/claimlist</span> <span class="base">vous donne tous vos claim (avec coordonné).</span></li>
+				</ul>
+				<li><span class="command">/msg [pseudo] [message]</span> <span class="base">permet de msg un joueur.</span></li>
+    			<li><span class="command">/r [message]</span> <span class="base">comme /msg mais avec la dernière personne à laquelle vous avez parlé.</span></li>
+    			<li><span class="command">/sb</span> <span class="base">affiche ou non le scoreboard (truc à droite de votre écran)</span></li>
+   				<li><span class="command">/trash</span> <span class="base">ouvre une poubelle.</span></li>
+    			<li><span class="command">/glow</span> <span class="base">ouvre l'interface qui permet de vous appliquer glowing avec une couleur personalisé.</span></li>
+    			<li><span class="command">/chatcolor gui</span> <span class="base">ouvre l'interface qui permet d'appliquer une couleur quand vous parlez dans le chat.</span></li>
+			</ul>
+			<h3>Premium ou voir <span class="command"><b>/perms</b></span> en jeu:</h3></span> <!-- Liste des commandes --> <!-- Utilisable UNIQUEMENT avec /rang | premium -->
+			<ul>
+				<li><span class="command">/craft</span> <span class="base">ouvre la table de craft.</span></li>
+				<li><span class="command">/heal</span> <span class="base">vous redonne toute votre vie.</span></li>
+				<li><span class="command">/feed</span> <span class="base">vous redonne toute votre barre de faim.</span></li>
+				<li><span class="command">/ec</span> <span class="base">ouvre l'enderchest.</span></li>
+				<li><span class="command">/fly</span> <span class="base">vous permet de voler à l'infini.</span></li>
+				<li><span class="command">/condense</span> <span class="base">condense les items (ex: foin).</span></li>
+				<li><span class="command">/spawn</span> <span class="base">téléporte au spawn du serveur.</span></li>
+			</ul>
+		</body>
 
-<link rel="stylesheet" type="text/css" href="style_wiki.css"> <!-- Style UNIQUEMENT pour les pages WIKI -->
-<link rel="stylesheet" type="text/css" href="style_cmd.css"> <!-- Style UNIQUEMENT pour la page COMMANDES -->
-<body>
-	<h1></h1>
-	<h1>Bienvenue sur le <span class="title_site">Wiki de AllPlugs</span></h1>
-	<h2>Commandes</h2>
-	<h3>Liste complète:</h3> <!-- Liste des commandes --> <!-- Utilisable sans /rang | premium -->
-	<ul>
-		<li><span class="command">/reglement</span> <span class="base">affiche le lien pour accedé au règlement.</span></li>
-		<li><span class="command">/wiki</span> <span class="base">ouvre l'interfaces du wiki.</span></li>
-		<li><span class="command">/discord</span> <span class="base">donne le lien du serveur discord.</span></li>
-		<li><span class="command">/help</span> <span class="base">ouvre l'interfaces du wiki.</span></li>
-		<li><span class="command">/shop</span> <span class="base">ouvre le shop, là où vous pouvez trouvé des spawners.</span></li>
-		<ul>
-			<li><span class="command">/sell hand</span> <span class="base">vend l'object dans votre main.</span></li>
-			<li><span class="command">/sellall [item]</span> <span class="base">vend tous les objects séléctionné dans votre inventaire.</span></li>
-			<li><span class="command">/sellall inventory</span> <span class="base">vend tous les object dans votre inventaire.</span></li>
-		</ul>
-		<li><span class="command">/claim</span> <span class="base">claim la zone autour de vous avec des claimblock.</span></li>
-		<ul>
-			<li><span class="command">/buyclaim</span> <span class="base">200$/claimbloc.</span></li>
-      	    <li><span class="command">/sellclaim</span> <span class="base">20$/claimbloc.</span></li>
-			<li><span class="command">/deleteallclaims</span> <span class="base">supprime tous vos claims.</span></li>
-			<li><span class="command">/deleteclaim</span> <span class="base">supprime le claim où vous vous situez.</span></li>
-            <li><span class="command">/claimlist</span> <span class="base">vous donne tous vos claim (avec coordonné).</span></li>
-		</ul>
-		<li><span class="command">/msg [pseudo] [message]</span> <span class="base">permet de msg un joueur.</span></li>
-    	<li><span class="command">/r [message]</span> <span class="base">comme /msg mais avec la dernière personne à laquelle vous avez parlé.</span></li>
-    	<li><span class="command">/sb</span> <span class="base">affiche ou non le scoreboard (truc à droite de votre écran)</span></li>
-   		<li><span class="command">/trash</span> <span class="base">ouvre une poubelle.</span></li>
-    	<li><span class="command">/glow</span> <span class="base">ouvre l'interface qui permet de vous appliquer glowing avec une couleur personalisé.</span></li>
-    	<li><span class="command">/chatcolor gui</span> <span class="base">ouvre l'interface qui permet d'appliquer une couleur quand vous parlez dans le chat.</span></li>
-	</ul>
-	<h3>Premium ou voir <span class="command"><b>/perms</b></span> en jeu:</h3></span> <!-- Liste des commandes --> <!-- Utilisable UNIQUEMENT avec /rang | premium -->
-	<ul>
-		<li><span class="command">/craft</span> <span class="base">ouvre la table de craft.</span></li>
-		<li><span class="command">/heal</span> <span class="base">vous redonne toute votre vie.</span></li>
-		<li><span class="command">/feed</span> <span class="base">vous redonne toute votre barre de faim.</span></li>
-		<li><span class="command">/ec</span> <span class="base">ouvre l'enderchest.</span></li>
-		<li><span class="command">/fly</span> <span class="base">vous permet de voler à l'infini.</span></li>
-		<li><span class="command">/condense</span> <span class="base">condense les items (ex: foin).</span></li>
-		<li><span class="command">/spawn</span> <span class="base">téléporte au spawn du serveur.</span></li>
-	</ul>
-</body>
-
 <!-- OBLIGATOIRE SUR TOUT LE SITE -->
-<footer>
-	© 2025 AllPlugs
-</footer>
+		<footer>© 2025 AllPlugs</footer>
 <!-- OBLIGATOIRE SUR TOUT LE SITE -->
+	</html>
+</html>
