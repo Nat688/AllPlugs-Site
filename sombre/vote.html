@@ -26,93 +26,88 @@
 </header>
 <!-- OBLIGATOIRE SUR TOUT LE SITE -->
 
-<link rel="stylesheet" type="text/css" href="style_vote.css"> <!-- Style UNIQUEMENT pour la page VOTE -->
-<body>
-  <h1>Bienvenue chez <span class="title_site">AllPlugs</span></h1>
-  <h2>Votez pour le Serveur Minecraft</h2>
+		<link rel="stylesheet" type="text/css" href="style_vote.css"> <!-- Style UNIQUEMENT pour la page VOTE -->
+		<body>
+  			<h1>Bienvenue chez <span class="title_site">AllPlugs</span></h1>
+  			<h2>Votez pour le Serveur Minecraft</h2>
 
-  <!-- Timer 1h30 -->
-  <div id="timer">01:30:00</div>
-  <h5>
-    <a href="https://serveur-prive.net/minecraft/allplug/vote" target="_blank" id="vote1">
-      <img src="images/vote/servpriv.png">
-    </a>
-  </h5>
+<!-- ----------------------------- Timer 1h30 ----------------------------- -->
+			<div id="timer">01:30:00</div>
+			<h5>
+    			<a href="https://serveur-prive.net/minecraft/allplug/vote" target="_blank" id="vote1">
+      				<img src="images/vote/servpriv.png">
+   				 </a>
+  			</h5>
 
-  <!-- Timer 2h -->
-  <div id="temps">02:00:00</div>
-  <h5>
-    <a href="https://top-serveurs.net/minecraft/vote/allplugs-6948489f3565f" target="_blank" id="vote2">
-      <img src="images/vote/topserv.png">
-    </a>
-  </h5>
-  <!-- --------------------  TIMERS  -------------------- -->
-  <script>
-    function lancerTimer(id, dureeSecondes, storageKey) {
-      const el = document.getElementById(id);
-
-		  if (localStorage.getItem(storageKey + "_done") === "1") {
-			  el.textContent = "Vous pouvez voté !";
-			  return;
-		  }
-      function formatTemps(sec) {
-        let h = Math.floor(sec / 3600);
-        let m = Math.floor((sec % 3600) / 60);
-        let s = sec % 60;
-        return (
-          String(h).padStart(2, "0") + ":" +
-          String(m).padStart(2, "0") + ":" +
-          String(s).padStart(2, "0")
-        );
-      }
+  <!-- ----------------------------- Timer 2h ----------------------------- -->
+			<div id="temps">02:00:00</div>
+  			<h5>
+    			<a href="https://top-serveurs.net/minecraft/vote/allplugs-6948489f3565f" target="_blank" id="vote2">
+      				<img src="images/vote/topserv.png">
+    			</a>
+  			</h5>
+  <!-- ----------------------------- TIMERS ----------------------------- -->
+  			<script>
+				function lancerTimer(id, dureeSecondes, storageKey) {
+					const el = document.getElementById(id);
+					if (localStorage.getItem(storageKey + "_done") === "1") {
+						el.textContent = "Vous pouvez voté !";
+						return;
+					}
+					function formatTemps(sec) {
+						let h = Math.floor(sec / 3600);
+						let m = Math.floor((sec % 3600) / 60);
+						let s = sec % 60;
+						return (
+							String(h).padStart(2, "0") + ":" +
+							String(m).padStart(2, "0") + ":" +
+							String(s).padStart(2, "0")
+						);
+					}
       // Vérifier si la date de fin existe déjà //
-      let fin = localStorage.getItem(storageKey);
-      if (!fin) {
-        fin = Date.now() + dureeSecondes * 1000;
-        localStorage.setItem(storageKey, fin);
-      } else {
-        fin = parseInt(fin, 10);
-      }
-
-      function tick() {
-        let restant = Math.floor((fin - Date.now()) / 1000);
-
-        if (restant <= 0) {
-			localStorage.setItem(storageKey + "_done", "1");
-			clearInterval(interval);
-			el.textContent = "Vous pouvez voté !";
-			localStorage.removeItem(storageKey);
-			return;
-		}
-
-        el.textContent = formatTemps(restant);
-      }
-      const interval = setInterval(tick, 1000);
-      tick(); // affichage immédiat //
-    }
+					let fin = localStorage.getItem(storageKey);
+					if (!fin) {
+						fin = Date.now() + dureeSecondes * 1000;
+						localStorage.setItem(storageKey, fin);
+					} else {
+						fin = parseInt(fin, 10);
+					}
+					function tick() {
+						let restant = Math.floor((fin - Date.now()) / 1000);
+						if (restant <= 0) {
+							localStorage.setItem(storageKey + "_done", "1");
+							clearInterval(interval);
+							el.textContent = "Vous pouvez voté !";
+							localStorage.removeItem(storageKey);
+							return;
+						}
+						el.textContent = formatTemps(restant);
+					}
+					const interval = setInterval(tick, 1000);
+					tick(); // affichage immédiat //
+				}
 
     // Lancer le timer seulement au clic sur le bouton de vote
-    document.getElementById("vote1").addEventListener("click", () => {
-		localStorage.removeItem("timer_1h30_done"); // 🔴 RESET si terminé //
-		lancerTimer("timer", 1 * 60 * 60 + 30 * 60, "timer_1h30");
-    });
-
-    document.getElementById("vote2").addEventListener("click", () => {
-		localStorage.removeItem("timer_2h_done"); // 🔴 RESET si terminé //
-		lancerTimer("temps", 2 * 60 * 60, "timer_2h");
-	});
+				document.getElementById("vote1").addEventListener("click", () => {
+					localStorage.removeItem("timer_1h30_done"); // 🔴 RESET si terminé //
+					lancerTimer("timer", 1 * 60 * 60 + 30 * 60, "timer_1h30");
+				});
+				document.getElementById("vote2").addEventListener("click", () => {
+					localStorage.removeItem("timer_2h_done"); // 🔴 RESET si terminé //
+					lancerTimer("temps", 2 * 60 * 60, "timer_2h");
+				});
 	  // Stockage des timers //
-	  	if (localStorage.getItem("timer_1h30")) {
-			lancerTimer("timer", 1 * 60 * 60 + 30 * 60, "timer_1h30");
-		}
-		if (localStorage.getItem("timer_2h")) {
-		    lancerTimer("temps", 2 * 60 * 60, "timer_2h");
-		}
-  </script>
-</body>
+				if (localStorage.getItem("timer_1h30")) {
+					lancerTimer("timer", 1 * 60 * 60 + 30 * 60, "timer_1h30");
+				}
+				if (localStorage.getItem("timer_2h")) {
+					lancerTimer("temps", 2 * 60 * 60, "timer_2h");
+				}
+			</script>
+		</body>
 
 <!-- OBLIGATOIRE SUR TOUT LE SITE -->
-<footer>
-	© 2025 AllPlugs
-</footer>
+		<footer>© 2025 AllPlugs</footer>
 <!-- OBLIGATOIRE SUR TOUT LE SITE -->
+	</html>
+</html>
