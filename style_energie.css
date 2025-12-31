@@ -5,4 +5,11 @@ h4 {
 h5 {
     text-align: center;
 }
+code {
+    background-color: #2b2d31;
+    color: #dbdee1;
+    padding: 1px 3px;
+    border-radius: 3px;
+    font-family: monospace;
+}
 /* PAGE DU WIKI - ENERGIE */
