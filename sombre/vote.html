@@ -33,22 +33,24 @@
   			<h1>Bienvenue chez <span class="title_site">AllPlugs</span></h1>
   			<h2>Votez pour le Serveur Minecraft</h2>
 
-<!-- ----------------------------- Timer 1h30 ----------------------------- -->
-			<div id="timer">01:30:00</div>
-			<h5>
-    			<a href="https://serveur-prive.net/minecraft/allplug/vote" target="_blank" id="vote1">
-      				<img src="images/vote/servpriv.png">
-   				 </a>
-  			</h5>
-
+			<!-- VOTES -->
+			<section class="vote-section">
+  <!-- ----------------------------- Timer 1h30 ----------------------------- -->
+				<div class="vote-card">
+					<h3>Vote N°1</h3>
+					<!-- TIMER -->
+					<p id="timer" class="vote-timer">Vous pouvez voter !</p>
+					<!-- BOUTON -->
+					<a href="https://serveur-prive.net/minecraft/allplug/vote" target="_blank" class="vote-btn" id="vote1">Vote Now</a>
+				</div>
   <!-- ----------------------------- Timer 2h ----------------------------- -->
-			<div id="temps">02:00:00</div>
-  			<h5>
-    			<a href="https://top-serveurs.net/minecraft/vote/allplugs-6948489f3565f" target="_blank" id="vote2">
-      				<img src="images/vote/topserv.png">
-    			</a>
-  			</h5>
-  <!-- ----------------------------- TIMERS ----------------------------- -->
+				<div class="vote-card">
+					<h3>Vote N°2</h3>
+					<p id="temps" class="vote-timer">Vous pouvez voter !</p>
+					<a href="https://top-serveurs.net/minecraft/vote/allplugs-6948489f3565f" target="_blank" class="vote-btn" id="vote2"> Vote Now</a>
+				</div>
+			</section>
+  <!-- ----------------------------- SCRIPT ----------------------------- -->
   			<script>
 				function lancerTimer(id, dureeSecondes, storageKey) {
 					const el = document.getElementById(id);
