@@ -8,4 +8,69 @@ h5 {
 div {
   text-align: center;
 }
+
+/* ===== VOTE SECTION ===== */
+
+:root {
+  --card: rgba(255,255,255,0.06);
+  --border: rgba(255,255,255,0.08);
+  --muted: #b6b6c2;
+  --grad: linear-gradient(135deg, #7b6cff, #ff6ec7);
+}
+
+.vote-section {
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.vote-card {
+  width: 340px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 26px;
+  padding: 40px;
+  text-align: center;
+  backdrop-filter: blur(12px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vote-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+
+.vote-icon {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.vote-card h3 {
+  font-size: 26px;
+  margin: 0;
+}
+
+.vote-card p {
+  color: var(--muted);
+  margin: 10px 0 30px;
+}
+
+.vote-btn {
+  display: inline-block;
+  padding: 14px 36px;
+  border-radius: 999px;
+  background: var(--grad);
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.vote-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 30px rgba(255,110,199,0.5);
+}
+
 /* PAGE VOTE */
