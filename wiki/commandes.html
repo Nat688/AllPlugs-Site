@@ -1,6 +1,217 @@
----
-layout: default
----
+<!DOCTYPE html> 
+<style>
+	html, body {
+		margin: 0;
+		padding: 0;
+	}
+
+      /* ===== BOUTONS ===== */
+    .buttons {
+        margin-top: 32px;
+        display: flex;
+        gap: 20px;
+    }
+    .btn {
+        padding: 10px 18px;
+		margin-left: 10px;
+        border-radius: 8px;
+        background: #1f1f1f;
+        color: #f1f1f1;
+        text-decoration: none;
+        font-weight: 80%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border: 1px solid #2b2b2b;
+        transition: 
+			transform 0.25s ease,
+        	box-shadow 0.25s ease,
+            background 0.25s ease;
+    }
+    .btn:hover {
+        transform: translateY(-4px);
+        background: #242424;
+        box-shadow: 0 10px 30px rgba(255,159,67,0.4);
+    }
+	.btn2 {
+        padding: 10px 18px;
+		margin-left: auto;
+		margin-right: 5px;
+        border-radius: 8px;
+        background: #1f1f1f;
+        color: #f1f1f1;
+        text-decoration: none;
+        font-weight: 80%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border: 1px solid #2b2b2b;
+        transition: 
+			transform 0.25s ease,
+			box-shadow 0.25s ease,
+			background 0.25s ease;
+    }
+    .btn2:hover {
+        transform: translateY(-4px);
+        background: #242424;
+        box-shadow: 0 10px 30px rgba(255,159,67,0.4);
+    }
+	.nou {
+		text-decoration: none;
+	}
+	header {
+    	position: fixed;
+    	top: 0;
+    	left: 0;
+    	width: 100%;
+		height: 60px;              /* OBLIGATOIRE */
+		background-color: #c3c0b8;
+		font-size: 100%;
+    	color: #f1f1f1;
+		display: flex;
+		align-items: center;
+	}
+	body.dark header {
+    	position: fixed;
+    	top: 0;
+    	left: 0;
+    	width: 100%;
+		height: 60px;              /* OBLIGATOIRE */
+		background-color: #0a0909;
+		font-size: 100%;
+    	color: #f1f1f1;
+		display: flex;
+		align-items: center;
+	}
+	footer {
+    	bottom: 0;
+    	left: 0;
+    	width: 100%;
+    	background-color: #A8D5E3;
+		font-size: 110%;
+    	color: #2C2E39;
+    	text-align: center;
+	}
+	body.dark footer {
+    	bottom: 0;
+    	left: 0;
+    	width: 100%;
+    	background-color: #2a2e64;
+		font-size: 110%;
+    	color: #F2F0EA;
+    	text-align: center;
+	}
+	body {
+    	padding-top: 60px;
+    	background-color: #F2F0EA;
+    	font-size: 150%;
+    	color: black;
+    	text-align: left;
+	}
+	body.dark {
+    	padding-top: 60px;
+    	background-color: #252121;
+    	font-size: 150%;
+    	color: white;
+    	text-align: left;
+	}
+	h1 {
+    	font-size: 200%;
+    	color: black;
+    	text-align: center;
+	}
+	body.dark h1 {
+    	background-color: #252121;
+    	font-size: 200%;
+    	color: white;
+    	text-align: center;
+	}
+	h2 {
+    	font-size: 150%;
+    	color: black;
+    	text-align: center;
+	}
+	body.dark h2 {
+    	background-color: #252121;
+    	font-size: 150%;
+    	color: white;
+    	text-align: center;
+	}
+	h3 {
+    	font-size: 125%;
+	}
+	body.dark h3 {
+    	background-color: #252121;
+    	font-size: 125%;
+    	color: white;
+	}
+/* ===== ICONES ===== */
+    .icon,
+    .btn i {
+		width: 20px;
+        height: 20px;
+        transition: transform 0.3s ease;
+    }
+    .btn:hover .icon,
+    .btn:hover i {
+        transform: scale(1.2) rotate(-8deg);
+    }
+</style>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/png" href="images/favicon.png">
+    	<title>AllPlugs</title> <!-- CHANGE SELON LA PAGE -->
+		<script src="https://unpkg.com/lucide@latest"></script>
+	</head>
+	<header>
+		<a href="https://nat688.github.io/AllPlugs-Site/index.html" class="btn">
+			<i data-lucide="house"></i>
+		</a>
+		<a href="https://nat688.github.io/AllPlugs-Site/patch.html" class="btn">
+			<i data-lucide="history"></i>
+		</a>
+		<a href="https://nat688.github.io/AllPlugs-Site/wiki.html" class="btn">
+			<i data-lucide="book-marked"></i>
+		</a> 
+		<a href="https://nat688.github.io/AllPlugs-Site/vote.html" class="btn">
+			<i data-lucide="vote"></i>
+		</a>
+		<button class="btn2" id="theme-toggle">
+			<i data-lucide="contrast"></i>
+		</button>
+			
+<!-- ACTIVER ICONS LUCIDE -->
+			
+        <script>
+				lucide.createIcons();
+		</script>
+		
+		<script>
+			const body = document.body;
+			const toggle = document.getElementById('theme-toggle');
+
+			// Vérifier si l'user à déjà une pref
+			if (localStorage.getItem('theme') == 'dark') {
+				body.classList.add('dark');
+			}
+			// Au clic du bouton
+			toggle.addEventListener('click', () => {
+				body.classList.toggle('dark');
+				// Save
+				if (body.classList.contains('dark')) {
+					localStorage.setItem('theme', 'dark');
+				}
+				else {
+					localStorage.setItem('theme', 'light');
+				}
+			});
+		</script>
+	</header>
+		
+<!-- CHANGE SELON LES PAGES -->
+
 <style>
 	.base {
   		color: #ECA427;
@@ -51,3 +262,9 @@ layout: default
 		<li><span class="command">/spawn</span> <span class="base">téléporte au spawn du serveur.</span></li>
 	</ul>
 </body>
+
+<!-- CHANGE SELON LES PAGES -->
+	<footer>
+		<li>© 2025 AllPlugs</li>
+	</footer>
+</html>
