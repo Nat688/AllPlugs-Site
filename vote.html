@@ -12,39 +12,45 @@ layout: default
  		text-align: center;
 	}
 /* ===== VOTE SECTION ===== */
-	:root {
-  		--card: rgba(255,255,255,0.06);
-  		--border: rgba(255,255,255,0.08);
-  		--muted: #b6b6c2;
-  		--grad: linear-gradient(135deg, #7b6cff, #ff6ec7);
-	}
-	body.dark :root {
-  		--card: rgba(0,0,0,0.06);
-  		--border: rgba(255,255,255,0.08);
-  		--muted: #b6b6c2;
-  		--grad: linear-gradient(135deg, #7b6cff, #ff6ec7);
-	}
-	.vote-section {
-  		padding: 30px 20px;
-  		display: flex;
-  		justify-content: center;
-  		gap: 40px;
-  		flex-wrap: wrap;
-	}
+
+.vote-section {
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* ===== CARD – MODE CLAIR (par défaut) ===== */
 	.vote-card {
   		width: 340px;
-  		background: var(--card);
-  		border: 1px solid var(--border);
+  		background: rgba(0, 0, 0, 0.04);
+  		border: 1px solid rgba(0, 0, 0, 0.06);
   		border-radius: 26px;
   		padding: 40px;
   		text-align: center;
   		backdrop-filter: blur(12px);
+  		box-shadow:
+    		0 10px 30px rgba(0,0,0,0.08),
+    		0 2px 8px rgba(0,0,0,0.04);
   		transition: transform 0.3s ease, box-shadow 0.3s ease;
 	}
+/* Hover premium */
 	.vote-card:hover {
   		transform: translateY(-10px);
-  		box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+  		box-shadow:
+    		0 25px 60px rgba(0,0,0,0.18),
+    		0 6px 20px rgba(0,0,0,0.12);
 	}
+/* ===== MODE SOMBRE ===== */
+	body.dark .vote-card {
+  		background: rgba(255, 255, 255, 0.06);
+  		border: 1px solid rgba(255, 255, 255, 0.12);
+  		box-shadow:
+    		0 10px 30px rgba(0,0,0,0.4),
+    		0 2px 10px rgba(0,0,0,0.3);
+	}
+/* ===== CONTENT ===== */
 	.vote-icon {
   		font-size: 42px;
   		margin-bottom: 20px;
@@ -54,14 +60,19 @@ layout: default
   		margin: 0;
 	}
 	.vote-card p {
-  		color: var(--muted);
+  		color: #6b7280;
   		margin: 10px 0 30px;
 	}
+/* Texte plus clair en dark */
+	body.dark .vote-card p {
+  		color: #b6b6c2;
+	}
+/* ===== BUTTON ===== */
 	.vote-btn {
   		display: inline-block;
   		padding: 14px 36px;
   		border-radius: 999px;
-  		background: var(--grad);
+  		background: linear-gradient(135deg, #7b6cff, #ff6ec7);
   		color: white;
   		font-weight: 600;
   		text-decoration: none;
