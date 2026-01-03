@@ -290,6 +290,11 @@ h3 {
 			</button>
 			<button class="btn2" onclick="toogleDarkMode()">🌑</button> <!-- CHANGE SELON LA PAGE -->
 		</header>
+		<script>
+			function toogleDarkMode() {
+				document.body.classList.toogle('dark');
+			}
+		</script>
 <!-- OBLIGATOIRE SUR TOUT LE SITE -->
 		{{ content }}
 <!-- OBLIGATOIRE SUR TOUT LE SITE -->
