@@ -110,12 +110,55 @@ layout: default
     .btn:hover i {
 		transform: scale(1.2) rotate(-8deg);
     }
+	.copy-btn {
+      	margin-left: 8px;
+  		padding: 4px 8px;
+  		border-radius: 6px;
+  		border: 1px solid #2b2b2b;
+  		background: #EAE7DD;
+  		cursor: pointer;
+  		font-size: 14px;
+  		transition: transform 0.2s ease, background 0.2s ease;
+	}
+	.copy-btn:hover {
+  		transform: translateY(-2px);
+  		background: #ddd;
+	}
+	body.dark .copy-btn {
+  		background: #1f1f1f;
+  		color: #f1f1f1;
+	}
 </style>
+
 <body>
 	<h1>Serveur Minecraft <span class="title_site">AllPlugs</span></h1>
 	<h2>Thème: Survie</h2>
 	<h3>Informations:</h3>
 	<li>Versions de Minecraft: 1.21.8 - 1.21.11</li> <!-- Versions de Minecraft pour le Serv MC -->
+	<li>
+		IP: <span id="ipServeur">allplugs.aternos.me:16106</span>
+		<button class="copy-btn" id="copyBtn" onclick="copierIP()">
+			<i data-lucide="copy"></i>
+		</button>
+	</li>
+	<script>
+		function copierIP() {
+			const ip = document.getElementById("ipServeur").innerText;
+			const btn = document.getElementById("copyBtn");
+			
+			navigator.clipboard.writeText(ip).then(() => {
+				btn.classList.add("success");
+  				btn.innerHTML = '<i data-lucide="copy-check"></i>';
+  				lucide.createIcons();
+
+				setTimeout(() => {
+    				btn.classList.remove("success");
+    				btn.innerHTML = '<i data-lucide="copy"></i>';
+    				lucide.createIcons();
+				}, 1500);
+			});
+		}
+	</script>
 	<li>IP: allplugs.aternos.me:16106</li> <!-- IP du Serv MC -->
 	<li>Version actuelle du serveur v7.1 Patch #17</li> <!-- Version actuel du Serv MC -->
 	<h5></h5>
