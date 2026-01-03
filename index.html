@@ -110,30 +110,49 @@ layout: default
     .btn:hover i {
 		transform: scale(1.2) rotate(-8deg);
     }
-	.copy-btn {
-      	margin-left: 8px;
-  		padding: 4px 8px;
-  		border-radius: 6px;
-  		border: 1px solid #2b2b2b;
-  		background: #EAE7DD;
-  		cursor: pointer;
-  		font-size: 14px;
-  		transition: transform 0.2s ease, background 0.2s ease;
-	}
-	.copy-btn:hover {
-  		transform: translateY(-2px);
-  		background: #ddd;
-	}
+	/* ===== BOUTON COPY ===== */
+    .copy-btn {
+        padding: 10px 18px;
+        border-radius: 8px;
+        background: #EAE7DD;
+        color: #1f1f1f;
+        text-decoration: none;
+        font-weight: 80%;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        border: 1px solid #2b2b2b;
+        transition: 
+          transform 0.25s ease,
+          box-shadow 0.25s ease,
+          background 0.25s ease;
+    }
 	body.dark .copy-btn {
-  		background: #1f1f1f;
-  		color: #f1f1f1;
-	}
-	/* État succès */
-	.copy-btn.success {
-  		background: #4CAF50;
-  		color: white;
-  		border-color: #4CAF50;
-	}
+        padding: 10px 18px;
+        border-radius: 8px;
+        background: #1f1f1f;
+        color: #f1f1f1;
+        text-decoration: none;
+        font-weight: 80%;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        border: 1px solid #2b2b2b;
+        transition: 
+          transform 0.25s ease,
+          box-shadow 0.25s ease,
+          background 0.25s ease;
+    }
+    .copy-btn:hover {
+        transform: translateY(-4px);
+        background: #242424;
+        box-shadow: 0 10px 30px rgba(255,159,67,0.4);
+    }
+	body.dark .copy-btn:hover {
+        transform: translateY(-4px);
+        background: #242424;
+        box-shadow: 0 10px 30px rgba(255,159,67,0.4);
+    }
 </style>
 
 <body>
@@ -143,7 +162,7 @@ layout: default
 	<li>Versions de Minecraft: 1.21.8 - 1.21.11</li> <!-- Versions de Minecraft pour le Serv MC -->
 	<li>
 		IP: <span id="ipServeur">allplugs.aternos.me:16106</span>
-		<button class="btn" id="copyBtn" onclick="copierIP()">
+		<button class="copy-btn" id="copyBtn" onclick="copierIP()">
 			<i data-lucide="copy"></i>
 		</button>
 	</li>
