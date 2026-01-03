@@ -69,6 +69,17 @@ layout: default
         background: #242424;
         box-shadow: 0 10px 30px rgba(255,159,67,0.4);
     }
+	/* ===== ICONES ===== */
+    .icon,
+    .btn i {
+		width: 20px;
+        height: 20px;
+        transition: transform 0.3s ease;
+	}
+	.btn:hover .icon,
+    .btn:hover i {
+		transform: scale(1.2) rotate(-8deg);
+    }
 </style>
 <body>
 	<h1>Serveur Minecraft <span class="title_site">AllPlugs</span></h1>
@@ -89,6 +100,14 @@ layout: default
 		<div class="separateur"></div>
 	</details>
 	<h5>Pour démarré le serveur:</h5>
-	<h6><a href="https://discord.com/invite/AAqBRQzJvZ"><img src="images/index/discord-icon.png"></a></h6> <!-- Lien serveur Discord (avec image ^^) -->
-	<h6><button class="btn"><a href="https://discord.com/channels/1243590602130718740/1394638473167769652">#🔓・start-serveur</a></button></h6> <!-- Lien vers le channel Discord | #start-serveur -->
+	<!-- Lien serveur Discord (avec image ^^) -->
+	<h6>
+		<a href="https://discord.com/invite/AAqBRQzJvZ" target="_blank" class="btn3">
+			<img src="https://cdn.simpleicons.org/discord/ffffff" alt="Discord" class="icon">Discord
+		</a>
+	</h6>
+	<!-- Lien vers le channel Discord | #start-serveur -->
+	<h6>
+		<a href="https://discord.com/channels/1243590602130718740/1394638473167769652">#🔓・start-serveur</a>
+	</h6> 
 </body>
