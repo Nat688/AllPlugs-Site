@@ -349,10 +349,6 @@ body.dark h3 {
 			<link rel="icon" type="image/png" href="images/favicon.png">
     		<title>AllPlugs - Serveur Minecraft</title> <!-- CHANGE SELON LA PAGE -->
 			<script src="https://unpkg.com/lucide@latest"></script>
-            <!-- ACTIVER LUCIDE -->
-            <script>
-				lucide.createIcons();
-			</script>
 		</head>
 		<header>
     		<button class="btn">
@@ -372,6 +368,12 @@ body.dark h3 {
 			<button class="btn2" id="theme-toggle">
 				<i data-lucide="contrast"></i>
 			</button> <!-- CHANGE SELON LA PAGE -->
+			
+			<!-- ACTIVER ICONS LUCIDE -->
+			
+            <script>
+				lucide.createIcons();
+			</script>
 		<script>
 			const body = document.body;
 			const toggle = document.getElementById('theme-toggle');
