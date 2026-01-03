@@ -46,9 +46,14 @@ layout: default
 		background-color: black;
 	}
 	/* ===== BOUTONS ===== */
+	.btn-container {
+    	display: flex;
+    	justify-content: center; /* centre horizontalement */
+    	align-items: center;
+    	gap: 12px; /* espace entre les boutons */
+	}
     .btn3 {
         padding: 10px 18px;
-		margin-left: 10px;
         border-radius: 8px;
         background: #1f1f1f;
         color: #f1f1f1;
@@ -56,7 +61,6 @@ layout: default
         font-weight: 80%;
         display: inline-flex;
         align-items: center;
-		text-align: center;
         gap: 10px;
         border: 1px solid #2b2b2b;
         transition: 
@@ -89,8 +93,10 @@ layout: default
 	<li>Versions de Minecraft: 1.21.8 - 1.21.11</li> <!-- Versions de Minecraft pour le Serv MC -->
 	<li>IP: allplugs.aternos.me:16106</li> <!-- IP du Serv MC -->
 	<li>Version actuelle du serveur v7.1 Patch #17</li> <!-- Version actuel du Serv MC -->
-	<a href="patch.html" class="btn3">Patch</a>
-	<a href="wiki.html" class="btn3">Wiki</a>
+	<div class="btn-container">
+		<a href="patch.html" class="btn3">Patch</a>
+		<a href="wiki.html" class="btn3">Wiki</a>
+	</div>
 	<details>
 		<summary><b>Fonctionnalités</b></summary> <!-- Fonctionnalités (déroullant) -->
 		<li>Ouvert aux cracks et premium</li>
