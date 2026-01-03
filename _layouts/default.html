@@ -295,7 +295,7 @@ h3 {
 			const toggle = document.getElementById('theme-toggle');
 
 			// Vérifier si l'user à déjà une pref
-			if (localStorage.gatItem('theme') == 'dark') {
+			if (localStorage.getItem('theme') == 'dark') {
 				body.classList.add('dark');
 			}
 			// Au clic du bouton
