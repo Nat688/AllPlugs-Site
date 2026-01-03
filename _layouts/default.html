@@ -288,12 +288,27 @@ h3 {
 			<button class="btn">
 				<a href="vote.html">Votes</a>
 			</button>
-			<button class="btn2" onclick="toogleDarkMode()">🌑</button> <!-- CHANGE SELON LA PAGE -->
+			<button class="btn2" id="theme-toggle">🌑</button> <!-- CHANGE SELON LA PAGE -->
 		</header>
 		<script>
-			function toogleDarkMode() {
-				document.body.classList.toogle('dark');
+			const body = document.body;
+			const toggle = document.getElementById('theme-toggle');
+
+			// Vérifier si l'user à déjà une pref
+			if (localStorage.gatItem('theme') == 'dark') {
+				body.classList.add('dark');
 			}
+			// Au clic du bouton
+			toggle.addEventListener('click', () => {
+				body.classList.toggle('dark');
+				// Save
+				if (body.classList.contains('dark')) {
+					localStorage.setItem('theme', 'dark');
+				}
+				else {
+					localStorage.setItem('theme', 'light');
+				}
+			});
 		</script>
 <!-- OBLIGATOIRE SUR TOUT LE SITE -->
 		{{ content }}
