@@ -45,6 +45,36 @@ body.dark details > summary {
   height: 2px;
   background-color: black;
 }
+	/* ===== BOUTONS ===== */
+      .buttons {
+        margin-top: 32px;
+        display: flex;
+        gap: 20px;
+      }
+
+      .btn3 {
+        padding: 10px 18px;
+		margin-left: 10px;
+        border-radius: 8px;
+        background: #1f1f1f;
+        color: #f1f1f1;
+        text-decoration: none;
+        font-weight: 80%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border: 1px solid #2b2b2b;
+        transition: 
+          transform 0.25s ease,
+          box-shadow 0.25s ease,
+          background 0.25s ease;
+      }
+
+      .btn3:hover {
+        transform: translateY(-4px);
+        background: #242424;
+        box-shadow: 0 10px 30px rgba(255,159,67,0.4);
+      }
 </style>
 		<body>
 			<h1>Serveur Minecraft <span class="title_site">AllPlugs</span></h1>
@@ -54,8 +84,8 @@ body.dark details > summary {
 			<li>IP: allplugs.aternos.me:16106</li> <!-- IP du Serv MC -->
 			<li>Version actuelle du serveur v7.1 Patch #17</li> <!-- Version actuel du Serv MC -->
 			<h5>
-					<a href="patch.html" class="btn">Patch</a>
-					<a href="wiki.html" class="btn">Wiki</a>
+					<a href="patch.html" class="btn3">Patch</a>
+					<a href="wiki.html" class="btn3">Wiki</a>
 			</h5>
 			<details>
 				<summary><b>Fonctionnalités</b></summary> <!-- Fonctionnalités (déroullant) -->
