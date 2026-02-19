@@ -6,6 +6,10 @@ layout: default
 	:root {
 		--fstime: 20px;
 		--fsbox: 25px;
+		--wbox: auto;
+		--nblue: #00b3ff;
+		--nred: #ff1744;
+		--ngreen: #39ff14;
 	}
   	.text_minion {
     	text-align: center;
@@ -43,10 +47,10 @@ layout: default
 	/* CASES - VERTES */
 	.box_green {
 		/* Largeur: auto = toute la ligne */
-  		width: auto;
+  		width: var(--wbox);
 
   		/* Bordure néon */
-  		border: 3px solid #39ff14;
+  		border: 3px solid var(--ngreen);
 
   		padding: 20px;
 		font-size: var(--fsbox);
@@ -66,13 +70,13 @@ layout: default
   		left: 12px;
 
   		background: rgba(0, 0, 0, 0.9);
-  		color: #39ff14;
+  		color: var(--ngreen);
 
   		font-size: var(--fstime);
   		padding: 4px 10px;
 
   		border-radius: 20px;
-  		border: 2px solid #39ff14;
+  		border: 2px solid var(--ngreen);
 
   		box-shadow:
     		0 0 6px rgba(57, 255, 20, 0.8),
@@ -81,10 +85,10 @@ layout: default
 	/* CASES - BLEUES */
 	.box_blue {
 		/* Largeur: auto = toute la ligne */
-  		width: auto;
+  		width: var(--wbox);
 
   		/* Bordure néon */
-  		border: 3px solid #00b3ff;
+  		border: 3px solid var(--nblue);
 
   		padding: 20px;
 		font-size: var(--fsbox);
@@ -104,13 +108,13 @@ layout: default
   		left: 12px;
 
   		background: rgba(0, 0, 0, 0.9);
-  		color: #00b3ff;
+  		color: var(--nblue);
 
   		font-size: var(--fstime);
   		padding: 4px 10px;
 
   		border-radius: 20px;
-  		border: 2px solid #00b3ff;
+  		border: 2px solid var(--nblue);
 
   		box-shadow:
   	    	0 0 8px rgba(0, 179, 255, 0.8),
@@ -119,10 +123,10 @@ layout: default
 	/* CASES - ROUGES */
 	.box_red {
 		/* Largeur: auto = toute la ligne */
-  		width: auto;
+  		width: var(--wbox);
 
   		/* Bordure néon */
-  		border: 3px solid #ff1744;
+  		border: 3px solid var(--nred);
 
   		padding: 20px;
 		font-size: var(--fsbox);
@@ -142,13 +146,13 @@ layout: default
   		left: 12px; /* laisse un espace vide vers la gauche */
 
   		background: rgba(0, 0, 0, 0.9);
-  		color: #ff1744;
+  		color: var(--nred);
 
   		font-size: var(--fstime);
   		padding: 4px 10px;
 
   		border-radius: 20px;
-  		border: 2px solid #ff1744;
+  		border: 2px solid var(--nred);
 
   		box-shadow:
   	    	0 0 8px rgba(255, 23, 68, 0.8),
