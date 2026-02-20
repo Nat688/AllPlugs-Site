@@ -14,15 +14,7 @@ layout: default
   	.text_minion {
     	text-align: center;
   	}
-  	details > summary {
-    	padding: 2px 6px;
-    	width: 100%;
-    	background-color: #EAE7DD;
-    	border: none;
-    	box-shadow: 3px 3px 4px black;
-    	cursor: pointer;
-  	}
-	body.dark details > summary {
+	details > summary {
     	padding: 2px 6px;
     	width: 100%;
     	background-color: #0a0909;
@@ -34,19 +26,16 @@ layout: default
 		color: #106EBE;
 	}
 	.acolor {
-		color: black;
-	}
-	body.dark .acolor {
     	color: #F2F0EA;
 	}
-	body.dark .case {
+	.case {
 		position: relative;
   		width: auto;
   		margin-top: 30px;
 		display: flex;
 	}
 	/* CASES - VERTES */
-	body.dark .box_green {
+	.box_green {
 		/* Largeur: auto = toute la ligne */
   		width: var(--wbox);
 
@@ -65,7 +54,7 @@ layout: default
     		0 0 40px rgba(0, 255, 0, 0.4),
     		0 10px 30px rgba(0,0,0,0.4);
 	}
-	body.dark .time_green {
+	.time_green {
   		position: absolute;
   		top: -15px;
   		left: 12px;
@@ -84,7 +73,7 @@ layout: default
     		0 0 14px rgba(57, 255, 20, 0.5);
 	}
 	/* CASES - BLEUES */
-	body.dark .box_blue {
+	.box_blue {
 		/* Largeur: auto = toute la ligne */
   		width: var(--wbox);
 
@@ -103,7 +92,7 @@ layout: default
     		0 0 40px rgba(0, 140, 255, 0.4),
     		0 10px 30px rgba(0,0,0,0.4);
 	}
-	body.dark .time_blue {
+	.time_blue {
   		position: absolute;
   		top: -15px;
   		left: 12px;
@@ -122,7 +111,7 @@ layout: default
     		0 0 20px rgba(0, 179, 255, 0.5),
 	}
 	/* CASES - ROUGES */
-	body.dark .box_red {
+	.box_red {
 		/* Largeur: auto = toute la ligne */
   		width: var(--wbox);
 
@@ -141,7 +130,7 @@ layout: default
     		0 0 40px rgba(255, 0, 60, 0.4),
     		0 10px 30px rgba(0,0,0,0.4);
 	}
-	body.dark .time_red {
+	.time_red {
   		position: absolute;
   		top: -15px; /* fait en sorte d'être au dessus */
   		left: 12px; /* laisse un espace vide vers la gauche */
@@ -160,7 +149,7 @@ layout: default
     		0 0 20px rgba(255, 23, 68, 0.5),
 	}
 	/* IMAGES */
-	body.dark img {
+	img {
 		width: 250px;
 		heigth: auto;
 		margin-left: 0%;
