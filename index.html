@@ -24,14 +24,6 @@ layout: default
 	details > summary {
 		padding: 2px 6px; /* Fait un espace de 2px Haut, Bas ET 6px Gauche, Droite */
 		width: 100%; /* Fait en sorte de couvrir toute la ligne */
-		background-color: #EAE7DD;
-		border: none;
-		box-shadow: 3px 3px 4px black;
-		cursor: pointer;
-	}
-	body.dark details > summary {
-		padding: 2px 6px; /* Fait un espace de 2px Haut, Bas ET 6px Gauche, Droite */
-		width: 100%; /* Fait en sorte de couvrir toute la ligne */
 		background-color: #0a0909;
 		border: none;
 		box-shadow: 3px 3px 4px black;
@@ -43,11 +35,6 @@ layout: default
 	.separateur {
 		width: 100%; /* Fait en sorte de couvrir toute la ligne */
 		height: 3px; /* Hauteur en px du séparateur */
-		background-color: #EAE7DD;
-	}
-	body.dark .separateur {
-		width: 100%; /* Fait en sorte de couvrir toute la ligne */
-		height: 3px; /* Hauteur en px du séparateur */
 		background-color: #0a0909;
 	}
 	/* ===== BOUTONS ===== */
@@ -57,23 +44,7 @@ layout: default
     	align-items: center;
     	gap: 12px; /* espace entre les boutons */
 	}
-    .btn3 {
-        padding: 10px 18px; /* Fait un espace de 10px Haut, Bas ET 18px Gauche, Droite */
-        border-radius: 8px; /* arondis les coins de 8px */
-        background: #EAE7DD;
-        color: #1f1f1f;
-        text-decoration: none;
-        font-weight: 80%;
-        display: inline-flex; /* flex mais que en ligne */
-        align-items: center;
-        gap: 10px; /* espace entre les elements */
-        border: 1px solid #2b2b2b;
-        transition: /* transforme avec temps etc. */
-          	transform 0.25s ease,
-          	box-shadow 0.25s ease,
-          	background 0.25s ease;
-    }
-	body.dark .btn3 {
+	.btn3 {
         padding: 10px 18px; /* Fait un espace de 10px Haut, Bas ET 18px Gauche, Droite */
         border-radius: 8px; /* arondis les coins de 8px */
         background: #1f1f1f;
@@ -89,12 +60,7 @@ layout: default
          	box-shadow 0.25s ease,
           	background 0.25s ease;
     }
-    .btn3:hover {
-        transform: translateY(-2px); /* transforme en hauteur de 2px */
-        background: #d4d2ca;
-        box-shadow: 0 10px 30px rgba(255,159,67,0.4);
-    }
-	body.dark .btn3:hover {
+	.btn3:hover {
         transform: translateY(-2px); /* transforme en hauteur de 2px */
         background: #242424;
         box-shadow: 0 10px 30px rgba(255,159,67,0.4);
@@ -111,23 +77,7 @@ layout: default
 		transform: scale(1.2) rotate(-8deg); /* Agrandit de 20% la taille + tourne en sens anti-horaire de 8° */
     }
 	/* ===== BOUTON COPY ===== */
-    .copy-btn {
-        padding: 6px 12px; /* Fait un espace de 10px Haut, Bas ET 18px Gauche, Droite */
-        border-radius: 6px; /* arondis les coins de 8px */
-        background: #EAE7DD;
-        color: #1f1f1f;
-        text-decoration: none;
-        font-weight: 80%;
-        display: inline-flex; /* flex mais que en ligne */
-        align-items: center;
-        gap: 10px; /* espace entre les elements */
-        border: 1px solid #2b2b2b;
-        transition: /* transforme avec temps etc. */
-          transform 0.25s ease,
-          box-shadow 0.25s ease,
-          background 0.25s ease;
-    }
-	body.dark .copy-btn {
+	.copy-btn {
         padding: 6px 12px; /* Fait un espace de 10px Haut, Bas ET 18px Gauche, Droite */
         border-radius: 6px; /* arondis les coins de 8px */
         background: #1f1f1f;
@@ -143,12 +93,7 @@ layout: default
           box-shadow 0.25s ease,
           background 0.25s ease;
     }
-    .copy-btn:hover {
-        transform: translateY(-2px); /* transforme en hauteur de 2px */
-        background: #d4d2ca;
-        box-shadow: 0 10px 30px rgba(255,159,67,0.4);
-    }
-	body.dark .copy-btn:hover {
+	.copy-btn:hover {
         transform: translateY(-2px); /* transforme en hauteur de 2px */
         background: #242424;
         box-shadow: 0 10px 30px rgba(255,159,67,0.4);
