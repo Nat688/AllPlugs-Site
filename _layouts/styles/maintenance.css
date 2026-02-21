@@ -1,1 +1,98 @@
+:root {
+    --bg: #181818;
+        		--card: #1f1f1f;
+        		--accent: #ff9f43;
+        		--accent-soft: rgba(255,159,67,0.4);
+        		--text: #f1f1f1;
+       		    --muted: #bdbdbd;
+      		}
+			* {
+        		box-sizing: border-box;
+        		font-family: Inter, system-ui, sans-serif;
+      		}
+      		body {
+        		margin: 0;
+        		height: 100vh;
+        		background: radial-gradient(circle at top, #222, var(--bg));
+        		display: flex;
+        		align-items: center;
+        		justify-content: center;
+        		color: var(--text);
+      		}
+			.container {
+        		display: flex;
+        		align-items: center;
+        		gap: 80px;
+      		}
 
+      /* ===== IMAGE ===== */
+      		.cone {
+        		width: 180px;
+        		transition: transform 0.8s ease;
+        		filter: drop-shadow(0 0 20px var(--accent-soft));
+      		}
+			.cone:hover {
+        		transform: rotate(360deg) scale(1.05);
+      		}
+
+      /* ===== TEXTE ===== */
+      		.content h1 {
+        		font-size: 48px;
+        		margin: 0;
+        		background: linear-gradient(90deg, #fff, var(--accent));
+        		-webkit-background-clip: text;
+        		-webkit-text-fill-color: transparent;
+      		}
+			.content p {
+        		margin-top: 16px;
+        		font-size: 18px;
+        		color: var(--muted);
+      		}
+
+      /* ===== BOUTONS ===== */
+      		.buttons {
+        		margin-top: 32px;
+        		display: flex;
+        		gap: 20px;
+      		}
+			.btn {
+        		padding: 14px 26px;
+        		border-radius: 14px;
+       		    background: var(--card);
+        		color: var(--text);
+        		text-decoration: none;
+        		font-weight: 600;
+        		display: flex;
+       		    align-items: center;
+        		gap: 10px;
+        		border: 1px solid #2b2b2b;
+        		transition: 
+          			transform 0.25s ease,
+          			box-shadow 0.25s ease,
+          			background 0.25s ease;
+      		}
+			.btn:hover {
+         		transform: translateY(-4px);
+         		background: #242424;
+         		box-shadow: 0 10px 30px var(--accent-soft);
+       		}
+
+      /* ===== ICONES ===== */
+       		.icon,
+       		.btn i {
+         		width: 20px;
+         		height: 20px;
+         		transition: transform 0.3s ease;
+       		}
+			.btn:hover .icon,
+       		.btn:hover i {
+				transform: scale(1.2) rotate(-8deg);
+       		}
+
+      /* ===== RESPONSIVE ===== */
+       		@media (max-width: 900px) {
+         		.container {
+           		flex-direction: column;
+           		text-align: center;
+         		}
+       		}
