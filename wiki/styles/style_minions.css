@@ -208,6 +208,44 @@ p {
 		0 0 6px rgba(0, 255, 255, 0.9),
 		0 0 14px rgba(0, 255, 255, 0.6);
 }
+/* CASES - VIOLET */
+.box_violet {
+	/* AFFICHAGE */
+	width: auto;
+	display: flex;
+	text-align: center;
+	gap: 10px;
+	padding: 20px;
+
+	/* BORDURES */
+	border: 3px solid #bb00ff;
+	border-radius: 20px;
+
+	/* EFFET NEON VIOLET */
+	box-shadow:
+		0 0 8px rgba(187, 0, 255, 0.9),
+		0 0 20px rgba(187, 0, 255, 0.6),
+		0 0 40px rgba(187, 0, 255, 0.4),
+		0 10px 30px rgba(0, 0, 0, 0.4);
+}
+.time_violet {
+	position: absolute;
+	top: -15px;
+	left: 12px;
+
+	background: rgba(0, 0, 0, 0.9);
+	padding: 4px 10px;
+
+	font-size: 25px;
+	color: #bb00ff;
+
+	border-radius: 20px;
+	border: 2px solid #bb00ff;
+
+	box-shadow:
+		0 0 6px rgba(187, 0, 255, 0.9),
+		0 0 14px rgba(187, 0, 255, 0.6);
+}
 /* IMAGES */
 img {
 	max-width: 300px;
