@@ -15,6 +15,9 @@ details > summary {
   	margin-top: 30px;
 	display: flex;
 }
+p {
+	font-size: 20px;
+}
 /* CASES - VERTES */
 .box_green {
 	/* AFFICHAGE */
@@ -43,7 +46,7 @@ details > summary {
   	background: rgba(0, 0, 0, 0.9);
 	padding: 4px 10px;
 	
-	font-size: 15px;
+	font-size: 25px;
   	color: #39ff14;
 
   	border-radius: 20px;
@@ -81,7 +84,7 @@ details > summary {
   	background: rgba(0, 0, 0, 0.9);
 	padding: 4px 10px;
 	
-	font-size: 15px;
+	font-size: 25px;
   	color: #00b3ff;
 
   	border-radius: 20px;
@@ -119,7 +122,7 @@ details > summary {
   	background: rgba(0, 0, 0, 0.9);
 	padding: 4px 10px;
 	
-	font-size: 15px;
+	font-size: 25px;
   	color: #ff1744;
 
   	border-radius: 20px;
