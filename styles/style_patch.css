@@ -1,5 +1,6 @@
 /* ===== TEXT ===== */
-h1, h2, h3, li, summary, details > summary {
+h1, h2, h3, li, summary, 
+details > summary {
     text-align: center;
 }
 h1 { font-size: 200%; }
