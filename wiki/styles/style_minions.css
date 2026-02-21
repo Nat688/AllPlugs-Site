@@ -9,12 +9,6 @@ details > summary {
   	box-shadow: 3px 3px 4px black;
   	cursor: pointer;
 }
-.title_site {
-	color: #106EBE;
-}
-.acolor {
-    color: #F2F0EA;
-}
 .case {
 	position: relative;
   	width: auto;
