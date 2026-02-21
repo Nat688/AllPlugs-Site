@@ -28,7 +28,7 @@ details > summary {
 	display: flex;
 	text-align: center;
 	gap: 10px;
-	padding: 20px
+	padding: 20px;
 
   	/* BORDURES */
   	border: 3px solid #39ff14;
@@ -66,7 +66,7 @@ details > summary {
 	display: flex;
 	text-align: center;
 	gap: 10px;
-	padding: 20px
+	padding: 20px;
 
   	/* BORDURES */
   	border: 3px solid #00b3ff;
@@ -104,7 +104,7 @@ details > summary {
 	display: flex;
 	text-align: center;
 	gap: 10px;
-	padding: 20px
+	padding: 20px;
 
   	/* BORDURES */
   	border: 3px solid #ff1744;
