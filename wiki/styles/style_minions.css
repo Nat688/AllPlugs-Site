@@ -38,7 +38,6 @@ p {
 		0 0 40px rgba(255, 255, 255, 0.4),
 		0 10px 30px rgba(0, 0, 0, 0.4);
 }
-
 .time_white {
 	position: absolute;
 	top: -15px;
@@ -170,6 +169,44 @@ p {
   	box-shadow:
     	0 0 4px rgba(255, 23, 68, 0.8),
     	0 0 10px rgba(255, 23, 68, 0.5);
+}
+/* CASES - AQUA */
+.box_aqua {
+	/* AFFICHAGE */
+	width: auto;
+	display: flex;
+	text-align: center;
+	gap: 10px;
+	padding: 20px;
+
+	/* BORDURES */
+	border: 3px solid #00ffff;
+	border-radius: 20px;
+
+	/* EFFET NEON AQUA */
+	box-shadow:
+		0 0 8px rgba(0, 255, 255, 0.9),
+		0 0 20px rgba(0, 255, 255, 0.6),
+		0 0 40px rgba(0, 255, 255, 0.4),
+		0 10px 30px rgba(0, 0, 0, 0.4);
+}
+.time_aqua {
+	position: absolute;
+	top: -15px;
+	left: 12px;
+
+	background: rgba(0, 0, 0, 0.9);
+	padding: 4px 10px;
+
+	font-size: 25px;
+	color: #00ffff;
+
+	border-radius: 20px;
+	border: 2px solid #00ffff;
+
+	box-shadow:
+		0 0 6px rgba(0, 255, 255, 0.9),
+		0 0 14px rgba(0, 255, 255, 0.6);
 }
 /* IMAGES */
 img {
