@@ -137,7 +137,7 @@ details > summary {
 }
 /* IMAGES */
 img {
-	width: 300px;
+	max-width: 300px;
 	height: auto;
 	margin-left: 0%;
 }
