@@ -62,15 +62,6 @@ footer {
     color: #F2F0EA;
     text-align: center;
 }
-/* ===== TITRES ===== */
-h1, h2, h3 {
-    background-color: #252121;
-    color: white;
-    text-align: center;
-}
-h1 { font-size: 200%; }
-h2 { font-size: 150%; }
-h3 { font-size: 125%; }
 /* ===== ICONES ===== */
 .icon,
 .btn i {
@@ -81,8 +72,4 @@ h3 { font-size: 125%; }
 .btn:hover .icon,
 .btn:hover i {
     transform: scale(1.2) rotate(-8deg);
-}
-/* ===== AUTRES ===== */
-.nou {
-    text-decoration: none;
 }
