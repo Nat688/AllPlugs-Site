@@ -5,14 +5,12 @@ body {
     color: white;
     text-align: left;
 }
-
 /* ===== BOUTONS ===== */
 .buttons {
     margin-top: 32px;
     display: flex;
     gap: 20px;
 }
-
 .btn,
 .btn2 {
     padding: 10px 18px;
@@ -30,23 +28,19 @@ body {
         box-shadow 0.25s ease,
         background 0.25s ease;
 }
-
 .btn {
     margin-left: 10px;
 }
-
 .btn2 {
     margin-left: auto;
     margin-right: 5px;
 }
-
 .btn:hover,
 .btn2:hover {
     transform: translateY(-4px);
     background: #242424;
     box-shadow: 0 10px 30px rgba(255,159,67,0.4);
 }
-
 /* ===== HEADER & FOOTER ===== */
 header {
     position: fixed;
@@ -59,7 +53,6 @@ header {
     display: flex;
     align-items: center;
 }
-
 footer {
     bottom: 0;
     left: 0;
@@ -69,18 +62,15 @@ footer {
     color: #F2F0EA;
     text-align: center;
 }
-
 /* ===== TITRES ===== */
 h1, h2, h3 {
     background-color: #252121;
     color: white;
     text-align: center;
 }
-
 h1 { font-size: 200%; }
 h2 { font-size: 150%; }
 h3 { font-size: 125%; }
-
 /* ===== ICONES ===== */
 .icon,
 .btn i {
@@ -88,12 +78,10 @@ h3 { font-size: 125%; }
     height: 20px;
     transition: transform 0.3s ease;
 }
-
 .btn:hover .icon,
 .btn:hover i {
     transform: scale(1.2) rotate(-8deg);
 }
-
 /* ===== AUTRES ===== */
 .nou {
     text-decoration: none;
