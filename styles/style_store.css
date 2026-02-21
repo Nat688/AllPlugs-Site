@@ -1,1 +1,8 @@
-
+/* ===== TEXT ===== */
+h1, h2 {
+    text-align: center;
+}
+h1 { font-size: 200%; }
+h2 { font-size: 150%; }
+/* ===== TITRE COULEUR ===== */
+.title_site { color: #106EBE; }
