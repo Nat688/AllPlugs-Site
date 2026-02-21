@@ -1,8 +1,23 @@
-summary,
-details > summary { 
-    text-align: center; 
+/* ===== TEXT ===== */
+h1, h2, h3, h5, h6, li, details, summary, details > summary {
+    text-align: center;
 }
-
+h1 { font-size: 200%; }
+h2 { font-size: 150%; }
+h3 { font-size: 125%; }
+li { font-size: 15px; }
+h7 { font-size: 50%; } /* -# de discord */
+/* le ``text`` de discord */
+code {
+    background-color: #2b2d31;
+    color: #dbdee1;
+    padding: 1px 3px;
+    border-radius: 3px;
+    font-family: monospace;
+}
+/* ===== TITRE COULEUR ===== */
+.title_site { color: #106EBE; }
+/* ===== AUTRES ===== */
 details > summary {
     padding: 2px 6px;
     width: 100%;
@@ -11,17 +26,3 @@ details > summary {
     box-shadow: 3px 3px 4px black;
     cursor: pointer;
 }
-
-code {
-    background-color: #2b2d31;
-    color: #dbdee1;
-    padding: 1px 3px;
-    border-radius: 3px;
-    font-family: monospace;
-}
-
-li { font-size: 15px; }
-
-.title_site { color: #106EBE; }
-
-h7 { font-size: 50%; }
