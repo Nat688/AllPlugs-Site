@@ -6,15 +6,15 @@ layout: default
 <body>
 	<h1>Bienvenue sur la Boutique du serveur <span class="title_site">AllPlugs</span></h1>
 	<main>
-    	<div class="produit">
-        	<h2>T-shirt</h2>
-        	<p>Prix : 20 €</p>
-        	<div id="paypal-button-container"></div>
-   		</div>
+    	<div class="produit" data-prix="50" data-nom="Chaussures">
+    		<h2>Chaussures</h2>
+    		<p>Prix : 50 €</p>
+    		<div class="paypal-btn"></div>
+		</div>
 	</main>
 
 	<!-- SDK PayPal -->
 	<script src="https://www.paypal.com/sdk/js?client-id=TON_CLIENT_ID&currency=EUR"></script>
-	<script src="script.js"></script>
+	<script src="scripts/script_boutique.js"></script>
 
 </body>
