@@ -6,7 +6,7 @@ h1 { font-size: 150%; }
 /* ===== TITRE COULEUR ===== */
 .title_site { color: #106EBE; }
 .produit {
-    background: white;
+    background: #0a0909;
     width: 300px;
     margin: 40px auto;
     padding: 20px;
