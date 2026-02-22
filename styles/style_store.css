@@ -1,8 +1,14 @@
 /* ===== TEXT ===== */
-h1, h2 {
+h1 {
     text-align: center;
 }
 h1 { font-size: 150%; }
-h2 { font-size: 120%; }
 /* ===== TITRE COULEUR ===== */
 .title_site { color: #106EBE; }
+.produit {
+    background: white;
+    width: 300px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 8px;
+}
