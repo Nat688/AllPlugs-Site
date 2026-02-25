@@ -7,15 +7,6 @@ h1 { font-size: 150%; }
 p {
 	font-size: 20px;
 }
-/* ===== AUTRES ===== */
-details > summary {
-  	padding: 2px 6px;
-  	width: 100%;
-  	background-color: #0a0909;
-  	border: none;
-  	box-shadow: 3px 3px 4px black;
-  	cursor: pointer;
-}
 /* ===== CASES ===== */
 .case {
 	position: relative;
