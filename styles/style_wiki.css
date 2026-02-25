@@ -8,8 +8,6 @@ h1 { font-size: 150%; }
 /* ===== BOUTTONS ===== */
 .btn-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 20%;
 }
 .btn4 {
