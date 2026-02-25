@@ -1,6 +1,9 @@
+/* ===== TITRES ===== */
 h1, h3, h4 {
   text-align: center;
 }
+h1 { font-size: 150%; }
+/* ===== TEXT ===== */
 code {
   background-color: #2b2d31;
   color: #dbdee1;
