@@ -3,6 +3,9 @@ h1 {
     text-align: center;
     font-size: 150%;
 }
+h2 {
+    margin-left: 20%;
+}
 /* ===== TITRE COULEUR ===== */
 .title_site { color: #106EBE; }
 /* ===== BOUTTONS ===== */
