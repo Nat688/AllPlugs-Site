@@ -1,3 +1,9 @@
+/* ===== TITRES ===== */
+h1 {
+    text-align: center;
+}
+h1 { font-size: 150%; }
+/* ===== TEXT ===== */
 .text_minion {
   	text-align: center;
 }
@@ -9,6 +15,7 @@ details > summary {
   	box-shadow: 3px 3px 4px black;
   	cursor: pointer;
 }
+/* ===== CASES ===== */
 .case {
 	position: relative;
   	width: auto;
