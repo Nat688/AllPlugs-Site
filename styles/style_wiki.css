@@ -5,6 +5,11 @@ h1 {
 }
 h2 {
     margin-left: 20%;
+    font-size: 125%;
+}
+h4 {
+    margin-left: 25%;
+    font-size: 110%;
 }
 /* ===== TITRE COULEUR ===== */
 .title_site { color: #106EBE; }
