@@ -25,6 +25,7 @@ h1 {
 }
 /* ===== COLONNES ===== */
 .container-colonnes {
+    display: flex;
     gap: 10%; /* espace entre colonnes */
     flex-direction: column;
 }
