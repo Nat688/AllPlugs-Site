@@ -7,6 +7,10 @@ h1 { font-size: 150%; }
 .text_minion {
   	text-align: center;
 }
+p {
+	font-size: 20px;
+}
+/* ===== AUTRES ===== */
 details > summary {
   	padding: 2px 6px;
   	width: 100%;
@@ -21,9 +25,6 @@ details > summary {
   	width: auto;
   	margin-top: 30px;
 	display: flex;
-}
-p {
-	font-size: 20px;
 }
 /* CASES - BLANCHE */
 .box_white {
