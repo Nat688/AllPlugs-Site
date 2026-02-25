@@ -1,6 +1,5 @@
 /* ===== TITRES ===== */
-h1, h2 {
+h1 {
     text-align: center;
 }
 h1 { font-size: 150%; }
-h2 { font-size: 125%; }
