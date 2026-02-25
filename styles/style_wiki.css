@@ -1,12 +1,9 @@
 /* ===== BODY ===== */
-body {
-    display: flex;
-}
 /* ===== TEXT ===== */
 h1 {
     text-align: center;
+    font-size: 150%;
 }
-h1 { font-size: 150%; }
 /* ===== TITRE COULEUR ===== */
 .title_site { color: #106EBE; }
 /* ===== BOUTTONS ===== */
