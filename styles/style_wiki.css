@@ -1,3 +1,7 @@
+/* ===== BODY ===== */
+body {
+    display: flex;
+}
 /* ===== TEXT ===== */
 h1 {
     text-align: center;
