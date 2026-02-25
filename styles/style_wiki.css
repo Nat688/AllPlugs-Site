@@ -5,3 +5,22 @@ h1 {
 h1 { font-size: 150%; }
 /* ===== TITRE COULEUR ===== */
 .title_site { color: #106EBE; }
+/* ===== BOUTTONS ===== */
+.btn4 {
+    padding: 10px 18px;
+    border-radius: 8px;
+    background: #1f1f1f;
+    color: #f1f1f1;
+    text-decoration: none;
+    font-weight: 80%;
+    display: inline-flex;
+    margin-left: 50px;
+    gap: 10px;
+    border: 1px solid #2b2b2b;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+.btn4:hover {
+    transform: translateY(-2px);
+    background: #242424;
+    box-shadow: 0 10px 30px rgba(255,159,67,0.4);
+}
