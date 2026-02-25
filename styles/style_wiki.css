@@ -6,7 +6,7 @@ h1 {
 /* ===== TITRE COULEUR ===== */
 .title_site { color: #106EBE; }
 /* ===== BOUTTONS ===== */
-.btn4 {
+.btn4, .btn5, .btn6 {
     padding: 10px 18px;
     border-radius: 8px;
     background: #1f1f1f;
@@ -14,11 +14,13 @@ h1 {
     text-decoration: none;
     font-weight: 80%;
     display: inline-flex;
-    margin-left: 10%;
     border: 1px solid #2b2b2b;
     transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
 }
-.btn4:hover {
+.btn4 { margin-left: 10%; }
+.btn5 { margin-left: 25%; }
+.btn6 { margin-left: 40%; }
+.btn4:hover, .btn5:hover, .btn6:hover {
     transform: translateY(-2px);
     background: #242424;
     box-shadow: 0 10px 30px rgba(255,159,67,0.4);
