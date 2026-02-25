@@ -14,7 +14,7 @@ h1 {
     text-decoration: none;
     font-weight: 80%;
     display: inline-flex;
-    margin-left: 10%;
+    margin-top: 10%;
     border: 1px solid #2b2b2b;
     transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
 }
