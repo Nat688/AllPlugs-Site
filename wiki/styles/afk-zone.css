@@ -1,0 +1,8 @@
+/* ===== TITRES ===== */
+h1, h2 {
+    text-align: center;
+}
+h1 { font-size: 150%; }
+h2 { font-size: 125%; }
+/* ===== TITRE COULEUR ===== */
+.title_site { color: #106EBE; }
