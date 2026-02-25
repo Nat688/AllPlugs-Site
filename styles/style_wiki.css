@@ -26,9 +26,3 @@ h1 {
     background: #242424;
     box-shadow: 0 10px 30px rgba(255,159,67,0.4);
 }
-/* ===== COLONNES ===== */
-.container-colonnes {
-    display: flex;
-    gap: 10%; /* espace entre colonnes */
-    flex-direction: column;
-}
