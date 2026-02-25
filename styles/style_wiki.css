@@ -25,11 +25,12 @@ h1 { font-size: 150%; }
 }
 /* ===== COLONNES ===== */
 .container-colonnes {
-  display: flex;
-  gap: 10%; /* espace entre colonnes */
+    display: flex;
+    gap: 10%; /* espace entre colonnes */
 }
 .colonne {
-  width: 150px;
-  height: 200px;
-  display: flex;
+    width: 150px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
 }
