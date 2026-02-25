@@ -6,6 +6,12 @@ h1 { font-size: 150%; }
 /* ===== TITRE COULEUR ===== */
 .title_site { color: #106EBE; }
 /* ===== BOUTTONS ===== */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+}
 .btn4 {
     padding: 10px 18px;
     border-radius: 8px;
