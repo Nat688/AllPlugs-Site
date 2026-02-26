@@ -10,15 +10,6 @@ header {
     display: flex;
     align-items: center;
 }
-footer {
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #0a0909;
-    font-size: 15px;
-    color: #F2F0EA;
-    text-align: center;
-}
 /* ===== OTHERS / NOT DETAILS ===== */
 * {
     box-sizing: border-box;
