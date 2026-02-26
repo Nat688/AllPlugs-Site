@@ -34,7 +34,7 @@ p {
 		0 0 40px rgba(255, 255, 255, 0.4),
 		0 10px 30px rgba(0, 0, 0, 0.4);
 }
-.time_white {
+.top_white {
 	position: absolute;
 	top: -15px;
 	left: 12px;
@@ -72,7 +72,7 @@ p {
     	0 0 40px rgba(0, 255, 0, 0.4),
     	0 10px 30px rgba(0,0,0,0.4);
 }
-.time_green {
+.top_green {
   	position: absolute;
   	top: -15px;
   	left: 12px;
@@ -110,7 +110,7 @@ p {
     	0 0 20px rgba(0, 140, 255, 0.4),
     	0 5px 15px rgba(0,0,0,0.4);
 }
-.time_blue {
+.top_blue {
 	position: absolute;
   	top: -15px;
   	left: 12px;
@@ -148,7 +148,7 @@ p {
     	0 0 20px rgba(255, 0, 60, 0.4),
     	0 5px 15px rgba(0,0,0,0.4);
 }
-.time_red {
+.top_red {
 	position: absolute;
   	top: -15px;
   	left: 12px;
@@ -186,7 +186,7 @@ p {
 		0 0 40px rgba(0, 255, 255, 0.4),
 		0 10px 30px rgba(0, 0, 0, 0.4);
 }
-.time_aqua {
+.top_aqua {
 	position: absolute;
 	top: -15px;
 	left: 12px;
@@ -224,7 +224,7 @@ p {
 		0 0 40px rgba(187, 0, 255, 0.4),
 		0 10px 30px rgba(0, 0, 0, 0.4);
 }
-.time_violet {
+.top_violet {
 	position: absolute;
 	top: -15px;
 	left: 12px;
@@ -262,7 +262,7 @@ p {
 		0 0 40px rgba(255, 255, 0, 0.4),
 		0 10px 30px rgba(0, 0, 0, 0.4);
 }
-.time_yellow {
+.top_yellow {
 	position: absolute;
 	top: -15px;
 	left: 12px;
