@@ -19,6 +19,7 @@ p {
 	/* AFFICHAGE */
 	width: auto;
 	display: flex;
+	text-align: center;
 	gap: 10px;
 	padding: 20px;
 
