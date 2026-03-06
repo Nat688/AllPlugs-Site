@@ -60,14 +60,7 @@ footer {
     background-color: #0a0909;
     font-size: 15px;
     color: #F2F0EA;
-}
-.base-p {
-    margin-left: auto;
-    margin-right: 10%;
-}
-.btn-footer {
-    margin-left: 50%;
-    text-decoration: none;
+    text-align: center;
 }
 /* ===== ICONES ===== */
 .icon,
