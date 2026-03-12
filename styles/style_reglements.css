@@ -5,7 +5,11 @@ h1 {
 }
 h2 {
     text-align: center;
-    font-size: 125%;
+    font-size: 135%;
+}
+h3 {
+    margin-left: 8%;
+    font-size: 120%;
 }
 h4 {
     margin-left: 5%;
