@@ -1,0 +1,15 @@
+/* ===== TEXT ===== */
+h1 {
+    text-align: center;
+    font-size: 150%;
+}
+h2 {
+    text-align: center;
+    font-size: 125%;
+}
+h4 {
+    margin-left: 5%;
+    font-size: 115%;
+}
+/* ===== TITRE COULEUR ===== */
+.title_site { color: #106EBE; }
