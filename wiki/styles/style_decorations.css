@@ -58,3 +58,23 @@ p {
 	height: auto;
 	margin-left: 0%;
 }
+.img_1 {
+    max-width: 20%;
+	height: auto;
+	margin-left: 2.5%;
+}
+.img_2 {
+    max-width: 20%;
+	height: auto;
+	margin-left: 27.5%;
+}
+.img_3 {
+    max-width: 20%;
+	height: auto;
+	margin-left: 52.5%;
+}
+.img_4 {
+    max-width: 20%;
+	height: auto;
+	margin-left: 77.5%;
+}
