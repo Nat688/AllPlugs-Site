@@ -5,8 +5,6 @@ h1, h2, h3, h5, h6, li, details {
 h1 { font-size: 200%; }
 h2 { font-size: 150%; }
 h3 { font-size: 125%; }
-/* ===== TITRE COULEUR ===== */
-.title_site { color: #106EBE; }
 /* ===== SEPARATEUR ===== */
 .separateur {
     width: 100%;
